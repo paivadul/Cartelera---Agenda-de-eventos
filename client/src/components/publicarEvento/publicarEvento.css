@@ -1,0 +1,71 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(247, 246, 246);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de los contenedores */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; /* Ajustado para dar más espacio */
+    margin: auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: rgb(92, 0, 135); /* Color de fondo */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    color: white; /* Color del texto */
+}
+
+/* Estilos de los formularios */
+.form {
+    margin-top: 20px;
+}
+
+.form label {
+    color: rgb(92, 0, 135);
+    font-weight: 600;
+}
+label {
+    margin: 10px;
+}
+.form input,
+.sendButton {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Estilos del enlace y botones */
+.link, .sendButton {
+    color: white; /* Color del texto */
+    background-color: rgb(92, 0, 135); /* Color de fondo */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor en forma de mano */
+}
+
+.link:hover, .sendButton:hover {
+    background-color: rgb(74, 0, 109); /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos de los errores */
+.error {
+    color: red; /* Color del texto de error */
+    font-size: 0.8em; /* Tamaño del texto */
+    display: block; /* Mostrar en línea propia */
+}

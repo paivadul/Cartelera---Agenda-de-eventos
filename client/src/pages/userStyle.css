@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(247, 246, 246);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de los contenedores */
+.container {
+    padding: 40px;
+    max-width: 400px; /* Se ajustó el ancho máximo */
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: rgb(92, 0, 135);
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+/* Estilos de los formularios */
+.form {
+    margin-top: 20px;
+}
+
+.form label {
+    margin-bottom: 10px;
+    color: rgb(92, 0, 135);
+    font-weight: 600;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="time"],
+.form input[type="number"],
+.form input[type="tel"],
+.form input[type="url"],
+.form textarea,
+.sendButton {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Estilos de los botones de radio */
+.form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilos del enlace y botones */
+.link, .sendButton {
+    color: white;
+    background-color: rgb(92, 0, 135);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.link:hover, .sendButton:hover {
+    background-color: rgb(74, 0, 109);
+}
+
+/* Estilos de los errores */
+.error {
+    color: red;
+    font-size: 0.8em;
+    display: block;
+}

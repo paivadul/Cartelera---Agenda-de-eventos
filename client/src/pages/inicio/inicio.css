@@ -1,0 +1,168 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(247, 246, 246);
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* Estilos de la barra de navegación */
+.navbar {
+    height: 50px;
+    background-color: rgb(255, 163, 0);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    background: none;
+    border: none;
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link:hover, .link:hover {
+    color: white;
+}
+
+/* Logo o título de la barra de navegación */
+.navbar h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+}
+
+/* Estilos de las tarjetas de eventos */
+.cont-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/*PARA EL HOOK EVENTDATA*/
+.event-card {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 100%; /* Se adapta al ancho disponible */
+    max-width: 900px; /* Ancho máximo de la tarjeta */
+    height: auto; /* Altura automática para mantener la proporción */
+    overflow: hidden;
+    text-align: left;
+}
+
+.event-image {
+    max-width: 400px; /* La imagen se expande para llenar el ancho en pantallas pequeñas */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.event-info {
+    padding: 15px;
+}
+
+.event-name {
+    color: rgb(92, 0, 135);
+    margin: 0;
+}
+
+.event-description {
+    color: rgb(146, 146, 146);
+    font-size: 0.9em;
+}
+
+.event-link {
+    background-color: rgb(255, 163, 0);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column; /* Apila los elementos verticalmente */
+    }
+    .event-image {
+        width: 100%; /* La imagen se expande para llenar el ancho */
+    }
+}
+
+
+
+
+
+
+/* Estilos para cuando no existan eventos disponibles */
+.vacio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Altura del contenedor */
+}
+
+.vacio h1 {
+    text-align: center; /* Alineación del texto */
+    font-size: 1.5em; /* Tamaño de fuente del título */
+    margin: 0; /* Sin márgenes externos */
+    font-weight: 700; /* Peso de la fuente para el título */
+}
+
+
+.nav-links button{
+    margin-left: 15px;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.nav-links button:hover{
+    background-color: rgb(74, 0, 109);
+}
+.nav-links input {
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    width: 300px;
+}
+
+.nav-links input:focus {
+    border-color: #007bff;
+}
+
+.nav-links input::placeholder {
+    color: #999;
+    font-style: italic;
+}
